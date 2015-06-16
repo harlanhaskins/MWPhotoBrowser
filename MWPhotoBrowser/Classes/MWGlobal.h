@@ -8,4 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
+NSBundle *mwBundle(void);
 NSString *MWLocalize(NSString *stringToken);
+UIImage *MWImage(NSString *imageName);

@@ -25,3 +25,11 @@ NSString *MWLocalize(NSString *stringToken) {
         return stringToken;
     }
 }
+
+UIImage *MWImage(NSString *imageName) {
+    if(mwBundle()) {
+        return [UIImage imageNamed:imageName inBundle:mwBundle() compatibleWithTraitCollection:nil];
+    } else {
+        return [UIImage new];
+    }
+}
